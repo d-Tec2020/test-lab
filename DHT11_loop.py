@@ -3,7 +3,7 @@ import time
 
 # センサーのタイプとピン番号を指定
 sensor = Adafruit_DHT.DHT22
-pin = 4
+pin = 14
 
 try:
     while True:
