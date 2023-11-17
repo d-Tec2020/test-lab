@@ -1,8 +1,9 @@
 import Adafruit_DHT
 import time
+import RPi.GPIO as GPIO  # GPIOモジュールを追加
 
 # センサーのタイプとピン番号を指定
-sensor = Adafruit_DHT.DHT22
+sensor = Adafruit_DHT.DHT11  # センサータイプをDHT11に変更
 pin = 14
 
 try:
