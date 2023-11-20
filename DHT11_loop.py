@@ -17,8 +17,8 @@ try:
         else:
             print('Failed to retrieve data from the sensor.')
 
-        # 一定の待機時間（ここでは5秒）を挟む
-        time.sleep(5)
+        # 一定の待機時間（ここでは6秒）を挟む
+        time.sleep(6)
 
 except KeyboardInterrupt:
     print("Program terminated by user")
