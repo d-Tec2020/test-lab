@@ -1,5 +1,6 @@
 import Adafruit_DHT
 import time
+import datetime
 import RPi.GPIO as GPIO  # GPIOモジュールを追加
 
 # センサーのタイプとピン番号を指定
@@ -13,6 +14,7 @@ try:
 
         # データの表示
         if humidity is not None and temperature is not None:
+            print("Last valid input: " + str(datetime.datetime.now()))
             print(f'Temperature: {temperature:.2f}°C, Humidity: {humidity:.2f}%')
         else:
             print('Failed to retrieve data from the sensor.')
